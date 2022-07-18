@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Kontak Admin</title>
+    <meta charset="UTF-8">
+    
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br><br>
+    <div id="kontak">
+        <b> Contact Admin </b>
+    </div>
+
+    <br><br>
+    <form>
+    <div id="kontak_medsos">
+        <p class="medsos"> Untuk memudahkan sahabat apotek bersama yang ingin berkonsultasi kesehatan secara gratis, <br>
+            pesan obat dan menikmati Free Delivery obat Apotek Bersama. <br>
+            Silahkan hubungi salah satu kontak dibawah ini : </p><br><br><br>
+        <img src="0.jpg" class='whatsapp' width=150 id="gambar"><br/>
+        <br>
+        <a href="#" class="button" onclick=sebelum()><<</a>
+
+        <a href="#" class="button" onclick="ganti(0)">1</a>
+        <a href="#" class="button" onclick="ganti(1)">2</a>
+        <a href="#" class="button" onclick="ganti(2)">3</a>
+        <a href="#" class="button" onclick="ganti(3)">4</a>
+        <a href="#" class="button" onclick="ganti(4)">5</a>
+        
+        <a href="#" class="button" onclick=sesudah()>>></a>
+
+        <div id="caption"> WhatsApp: 085725927243</div>
+        <br><br><br>
+
+        <script>
+            var nomor = 0;
+            var caption = document.getElementById('caption');
+            var text2 = ['WhatsApp: 085725927243','Instagram: @apotek_bersama','Facebook: Apotek Bersama','Twitter: @ApotekBersama17','G-mail: apotekbersama17@gmail.com'];
+
+            function ganti(angka){
+                nomor = angka;
+                var lokasi = angka + '.jpg';
+                document.getElementById('gambar').src = lokasi;
+                caption.innerHTML = text2[angka];
+                return false;
+            }
+
+            function sebelum(){
+                nomor = nomor - 1;
+
+                if(nomor < 0){
+                    nomor = 3;
+                }
+
+                var lokasi = nomor + '.jpg';
+                document.getElementById('gambar').src = lokasi;
+                caption.innerHTML = text2[nomor];
+                return false;
+            }	
+            function sesudah(){
+                nomor = nomor + 1;
+
+                if(nomor > 3){
+                    nomor = 0;
+                }
+
+                var lokasi = nomor + '.jpg';
+                document.getElementById('gambar').src = lokasi;
+                caption.innerHTML = text2[nomor];
+                return false;
+            }
+            function sesudah(){
+                nomor = nomor + 1;
+
+                if(nomor > 4){
+                    nomor = 0;
+                }
+
+                var lokasi = nomor + '.jpg';
+                document.getElementById('gambar').src = lokasi;
+                caption.innerHTML = text2[nomor];
+                return false;
+            }
+        </script>
+    </div>
+    
+    </form>
+  
+</body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(2, 76, 99, 0.685);
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+.container h1{
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2979ff;
+}
+.container label{
+    text-align: left;
+    color: #90caf9;
+}
+.container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #2979ff;
+    color: #fff;
+    font-size: 20px;
+}
+.container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
+
+
+#menu_kontak{
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    display: inline;
+	top: 0;
+	left: 0;
+	position: fixed ;
+	width: 100%;
+    font-family: sans-serif;
+}
+
+#kontak{
+    font-size: 18px;
+    font-style: normal;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#kontak_medsos{
+    position: static;
+	font-size: 18px;
+	margin-left: 0px;
+	margin-top: 25px;
+    font-family: sans-serif;
+	text-align: center;
+}
